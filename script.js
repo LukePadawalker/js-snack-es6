@@ -102,17 +102,22 @@ console.log(upperId);
 let upperCase = facolta.map(student => student.name.toUpperCase())
 console.log(upperCase);
 
+// SNACK 3
+// Creare un array di oggetti:
+// Ogni oggetto descriverà una bici da corsa con le seguenti proprietà: name e peso.
+// Stampare in console la bici con peso minore utilizzando il destructuring
+
+
+const biciclette = [
+  { name: 'Bianchi',
+    peso: 8 },
+  { name: 'Trek', 
+    peso: 7 },
+  { name: 'Specialized', 
+    peso: 12 },
+  { name: 'Cannondale', 
+    peso: 9 }
+];
 
 
 
-
-
-
-// Id|Name|Grades
-// 213|Marco della Rovere|78
-// 110|Paola Cortellessa|96
-// 250|Andrea Mantegna|48
-// 145|Gaia Borromini|74
-// 196|Luigi Grimaldello|68
-// 102|Piero della Francesca|50
-// 120|Francesca da Polenta|84
