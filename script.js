@@ -111,13 +111,17 @@ console.log(upperCase);
 // creo un array di bici
 const biciclette = [
   { name: 'Bianchi',
-    peso: 8 },
+    peso: 8 
+  },
   { name: 'Trek', 
-    peso: 7 },
+    peso: 7 
+  },
   { name: 'Specialized', 
-    peso: 12 },
+    peso: 12 
+  },
   { name: 'Cannondale', 
-    peso: 9 }
+    peso: 9 
+  }
 ];
 
 
@@ -134,4 +138,41 @@ biciclette.forEach(bici => {
 
 // stampo in console il risultato finale
 console.log(biciLeggera);
+
+
+
+// # SNACK 4
+// Creare un array di oggetti di squadre di calcio.
+// Ogni squadra avrà diverse proprietà: nome, punti fatti, falli subiti.
+// nome sarà l’unica proprietà da inventare voi, le altre saranno tutte settate a 0.
+// Generare numeri random al posto degli 0 nelle proprietà punti fatti e falli subiti.
+// Infine, usando il destructuring, creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console
+
+
+const squadreDiCalcio = [
+  { nome: 'Juventus',
+    punti: 0,
+    falli: 0 
+  },
+  { nome: 'Milan', 
+    punti: 0, 
+    falli: 0 
+  },
+  { nome: 'Inter', 
+    punti: 0, 
+    falli: 0 
+  },
+  { nome: 'Roma', 
+    punti: 0, 
+    falli: 0 
+  },
+  { nome: 'Lazio', 
+  punti: 0, 
+  falli: 0 
+  },
+  { nome: 'Napoli', 
+  punti: 0, 
+  falli: 0 
+  }
+];
 
