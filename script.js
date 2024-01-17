@@ -149,6 +149,7 @@ console.log(biciLeggera);
 // Infine, usando il destructuring, creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console
 
 
+// creaimo un array
 const squadreDiCalcio = [
   { nome: 'Juventus',
     punti: 0,
@@ -175,4 +176,24 @@ const squadreDiCalcio = [
   falli: 0 
   }
 ];
+
+
+// creiamo una funzione che generi un numero random
+const randomNum = () => {
+  return Math.floor(Math.random() * 100) + 1;
+};
+
+
+// per ogni squadra di calcio generiamo un numero random e inseriamolo
+squadreDiCalcio.forEach(squadra => {
+  squadra.punti = randomNum();
+  squadra.falli = randomNum();
+});
+
+// da ogni elemento dell'array, estraiamo il nome e i falli
+const nomiEFalli = squadreDiCalcio.map(({ nome, falli }) => ({ nome, falli }));
+
+console.log(nomiEFalli);
+
+
 
