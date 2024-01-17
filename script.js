@@ -108,6 +108,7 @@ console.log(upperCase);
 // Stampare in console la bici con peso minore utilizzando il destructuring
 
 
+// creo un array di bici
 const biciclette = [
   { name: 'Bianchi',
     peso: 8 },
@@ -120,4 +121,17 @@ const biciclette = [
 ];
 
 
+// creo una variabile di confronto
+let biciLeggera = biciclette[0];
+
+
+// verifico ogni elemento dell'array e vedo se è minore della bici in variabile
+biciclette.forEach(bici => {
+  if (bici.peso < biciLeggera.peso){
+    biciLeggera = bici;
+  }
+})
+
+// stampo in console il risultato finale
+console.log(biciLeggera);
 
